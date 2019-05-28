@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public title = 'AngularFirst';
+  public title = 'Hello! ';
+  public name = 'My Name is Hello!!!';
+  public count = 1;
+
+  /** Member Function  */
+  public counter() {
+    this.count += 1;
+  }
 }
