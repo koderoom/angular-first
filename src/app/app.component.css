@@ -1,0 +1,12 @@
+.make-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.beautify {
+    font-size: 2rem;
+    background: royalblue;
+    color : whitesmoke;
+    font-family: cursive;
+}
