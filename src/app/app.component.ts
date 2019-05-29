@@ -18,7 +18,8 @@ export class AppComponent {
 
   public constructor() {
     this.dataList = [];
-    this.postList = Post.getPostList();
+    // this.postList = Post.getPostList();
+    this.postList = [];
   }
 
   /** Member Function  */
@@ -27,6 +28,8 @@ export class AppComponent {
   }
 
   public addBlock(): void {
-    this.dataList.push(new Post());
+    const newPost = new Post();
+    newPost.postData = 'Hello';
+    this.postList.push(newPost);
   }
 }
