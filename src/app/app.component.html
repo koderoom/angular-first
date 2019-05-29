@@ -4,4 +4,38 @@
       PROJECT NAME
     </div>
   </div>
+
+  <div class="row mt-1">
+    <div class="col-3"></div>
+
+    <div class="col-6 ">
+        
+        <!-- ADD BUTTON BLOCK -->
+        <div class="row">
+          <div class="col-12">
+            <button (click)="addBlock()" class="btn btn-primary btn-block">ADD ONE MORE BLOCK</button>
+          </div>
+        </div>  
+
+        <!-- ONE BLOCK -->
+        <div class="row bg-secondary mt-1" *ngFor="let item of postList">
+          <div style="height:100px;" class="col-12 text-light d-flex justify-content-center align-items-center">
+            {{item.postData}}
+
+            <p>
+              LIKE - {{item.likeCount}}
+            </p>
+          </div>
+        </div>
+
+        <!-- BLOCK TO BE CONDITIONAL -->
+        <div class="row mt-1" *ngIf="dataList.length == 0">
+          <div class="col-12 bg-secondary text-light d-flex justify-content-center align-items-center" style="height:200px;">
+            POST SOMETHING HERE
+          </div>
+        </div>
+    </div>
+
+    <div class="col-3"></div>
+  </div>
 </div>
