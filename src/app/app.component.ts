@@ -27,6 +27,6 @@ export class AppComponent {
   }
 
   public addBlock(): void {
-    this.dataList.push('Q');
+    this.dataList.push(new Post());
   }
 }
